@@ -1,0 +1,36 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    background-color: white;
+    text-align: center;
+    color: #B30000;
+    border: outset yellowgreen;
+}
+
+h2 {
+    background-color: white;
+    text-align: center;
+    color: #026412;
+    border: outset #B30000;
+}
+
+h3 {
+    background-color: white;
+    text-align: center;
+    color: #1C36FD;
+    border: outset yellow;
+}
+
+h4 {
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+p {
+    background-color: white;
+    color: #575757;
+}

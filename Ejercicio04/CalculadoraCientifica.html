@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CalculadoraCientifica.css" />
+    <title>Calculadora Cientifica</title>
+
+
+</head>
+
+<body>
+    <div class="calculadora">
+        <script src="CalculadoraCientifica.js"></script>
+        <input type="text" class="pantalla" id="resultado" disabled />
+
+        <div class="botones">
+
+            <input type="button" class="boton" value="x^2" onClick="calculadoraCientifica.botonX2Click()" />
+            <input type="button" class="boton" value="x^y" onClick="calculadoraCientifica.botonXYClick()" />
+            <input type="button" class="boton" value="log" onClick="calculadoraCientifica.botonLogClick()" />
+            <input type="button" class="boton" value="exp" onClick="calculadoraCientifica.botonExpClick()" />
+
+            <input type="button" class="boton" value="asin" onClick="calculadoraCientifica.botonAcSinClick()" />
+            <input type="button" class="boton" value="acos" onClick="calculadoraCientifica.botonAcCosClick()" />
+            <input type="button" class="boton" value="atan" onClick="calculadoraCientifica.botonAcTanClick()" />
+            <input type="button" class="boton" value="Pi" onClick="calculadoraCientifica.botonPiClick()" />
+           
+            <input type="button" class="boton" value="sin" onClick="calculadoraCientifica.botonSinClick()" />
+            <input type="button" class="boton" value="cos" onClick="calculadoraCientifica.botonCosClick()" />
+            <input type="button" class="boton" value="tan" onClick="calculadoraCientifica.botonTanClick()" />
+            <input type="button" class="boton" value="+-" onClick="calculadoraCientifica.botonSignClick()" />
+
+            <input type="button" class="boton" value="10^x" onClick="calculadoraCientifica.boton10XClick()" />
+            <input type="button" class="boton" value="sqrt"
+                onClick="calculadoraCientifica.botonSqrtClick(this.value)" />
+            <input type="button" class="boton" value="(" onClick="calculadoraCientifica.botonClick(this.value)" />
+            <input type="button" class="boton" value=")" onClick="calculadoraCientifica.botonClick(this.value)" />
+
+            <input type="button" class="boton" value="mrc" onClick="calculadoraCientifica.botonMRCClick()" />
+            <input type="button" class="boton" value="m-" onClick="calculadoraCientifica.botonMRMinusClick()" />
+            <input type="button" class="boton" value="m+" onClick="calculadoraCientifica.botonMRAddClick()" />
+            <input type="button" class="operacion" value="/" onClick="calculadoraCientifica.botonClick(this.value)" />
+
+            <input type="button" class="boton" value="7" onClick="calculadoraCientifica.botonClick(this.value)" />
+            <input type="button" class="boton" value="8" onClick="calculadoraCientifica.botonClick(this.value)" />
+            <input type="button" class="boton" value="9" onClick="calculadoraCientifica.botonClick(this.value)" />
+            <input type="button" class="operacion" value="*" onClick="calculadoraCientifica.botonClick(this.value)" />
+
+            <input type="button" class="boton" value="4" onClick="calculadoraCientifica.botonClick(this.value)" />
+            <input type="button" class="boton" value="5" onClick="calculadoraCientifica.botonClick(this.value)" />
+            <input type="button" class="boton" value="6" onClick="calculadoraCientifica.botonClick(this.value)" />
+            <input type="button" class="operacion" value="-" onClick="calculadoraCientifica.botonClick(this.value)" />
+
+
+            <input type="button" class="boton" value="1" onClick="calculadoraCientifica.botonClick(this.value)" />
+            <input type="button" class="boton" value="2" onClick="calculadoraCientifica.botonClick(this.value)" />
+            <input type="button" class="boton" value="3" onClick="calculadoraCientifica.botonClick(this.value)" />
+            <input type="button" class="operacion" value="+" onClick="calculadoraCientifica.botonClick(this.value)" />
+
+
+            <input type="button" class="boton" value="0" onClick="calculadoraCientifica.botonClick(this.value)">
+            <input type="button" class="boton" value="." onClick="calculadoraCientifica.botonClick(this.value)">
+            <input type="button" class="boton" value="C" onClick="calculadoraCientifica.botonClearClick()">
+            <input type="button" class="calc" value="=" onClick="calculadoraCientifica.calc()" />
+
+        </div>
+    </div>
+    <p></p>
+    <footer>
+        <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png"
+                alt="¡HTML5 válido!" height="31" width="88" /></a>
+    </footer>
+</body>
+
+</html>

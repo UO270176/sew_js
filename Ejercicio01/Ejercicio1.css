@@ -1,0 +1,47 @@
+body {
+    background-color: #ffcdb0;
+    color: black;
+    margin: 0%;
+}
+
+h1 {
+    margin: 0%;
+    background-color: #f76e1e;
+    color: #fff;
+    padding: 4%;
+    text-align: center;
+}
+
+h2 {
+    margin: 0%;
+    background-color: #f3803d;
+    padding: 3%;
+    text-align: center;
+    color: black
+}
+
+h3 {
+    margin: 0%;
+    background-color: #faa06c;
+    padding: 2%;
+    text-align: center;
+    color: black
+}
+
+h4 {
+    margin: 0%;
+    background-color: #f8b995;
+    padding: 1%;
+    text-align: center;
+    color: black
+}
+
+p {
+    background-color: #ffcdb0;
+    margin: 1%;
+    color: gray;
+}
+
+footer {
+    margin: 1%;
+}

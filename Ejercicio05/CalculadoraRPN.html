@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CalculadoraRPN.css" />
+    <title>Calculadora RPN</title>
+
+
+</head>
+
+<body>
+    <div class="calculadora">
+        <script src="CalculadoraRPN.js"></script>
+
+        <div class="pantalla" id="pila"></div>
+        <input type="text" class="pantalla" id="linea" disabled />
+
+        <div class="botones">
+
+            <input type="button" class="boton" value="x^2" onClick="calculadoraRPN.botonX2Click()" />
+            <input type="button" class="boton" value="log" onClick="calculadoraRPN.botonLogClick()" />
+            <input type="button" class="boton" value="exp" onClick="calculadoraRPN.botonExpClick()" />
+            <input type="button" class="boton" value="sqrt" onClick="calculadoraRPN.botonSqrtClick(this.value)" />
+
+            <input type="button" class="boton" value="asin" onClick="calculadoraRPN.botonAcSinClick()" />
+            <input type="button" class="boton" value="acos" onClick="calculadoraRPN.botonAcCosClick()" />
+            <input type="button" class="boton" value="atan" onClick="calculadoraRPN.botonAcTanClick()" />
+            <input type="button" class="boton" value="Pi" onClick="calculadoraRPN.botonPiClick()" />
+
+            <input type="button" class="boton" value="sin" onClick="calculadoraRPN.botonSinClick()" />
+            <input type="button" class="boton" value="cos" onClick="calculadoraRPN.botonCosClick()" />
+            <input type="button" class="boton" value="tan" onClick="calculadoraRPN.botonTanClick()" />
+            <input type="button" class="boton" value="+-" onClick="calculadoraRPN.botonSignClick()" />
+
+
+            <input type="button" class="boton" value="7" onClick="calculadoraRPN.botonClick(this.value)" />
+            <input type="button" class="boton" value="8" onClick="calculadoraRPN.botonClick(this.value)" />
+            <input type="button" class="boton" value="9" onClick="calculadoraRPN.botonClick(this.value)" />
+            <input type="button" class="operacion" value="/" onClick="calculadoraRPN.botonDivClick()" />
+
+            <input type="button" class="boton" value="4" onClick="calculadoraRPN.botonClick(this.value)" />
+            <input type="button" class="boton" value="5" onClick="calculadoraRPN.botonClick(this.value)" />
+            <input type="button" class="boton" value="6" onClick="calculadoraRPN.botonClick(this.value)" />
+            <input type="button" class="operacion" value="*" onClick="calculadoraRPN.botonMultClick()" />
+
+            <input type="button" class="boton" value="1" onClick="calculadoraRPN.botonClick(this.value)" />
+            <input type="button" class="boton" value="2" onClick="calculadoraRPN.botonClick(this.value)" />
+            <input type="button" class="boton" value="3" onClick="calculadoraRPN.botonClick(this.value)" />
+            <input type="button" class="operacion" value="-" onClick="calculadoraRPN.botonMinusClick()" />
+
+            <input type="button" class="boton" value="0" onClick="calculadoraRPN.botonClick(this.value)">
+            <input type="button" class="boton" value="." onClick="calculadoraRPN.botonClick(this.value)">
+            <input type="button" class="calc" value="ENTER" onClick="calculadoraRPN.enter()" />
+            <input type="button" class="operacion" value="+" onClick="calculadoraRPN.botonSumClick()" />
+
+            <input type="button" class="boton" value="C" onClick="calculadoraRPN.botonClearClick()">
+
+
+        </div>
+    </div>
+    <p></p>
+    <footer>
+        <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png"
+                alt="¡HTML5 válido!" height="31" width="88" /></a>
+    </footer>
+</body>
+
+</html>
