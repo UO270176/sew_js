@@ -20,7 +20,7 @@ body {
 }
 
 .botones {
-    padding: 2% 5% 15% 5%;
+    padding: 2% 5% 5% 5%;
     background-color: beige;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -30,6 +30,7 @@ body {
 }
 
 .boton {
+    padding:10% 0%;
     background-color: rgb(255, 255, 255);
     color: black;
 }
