@@ -11,40 +11,43 @@
 
 <body>
     <div class="calculadora">
-        <script src="CalculadoraBases.js"></script>
+
         <input type="text" class="pantalla" id="resultado" disabled />
 
         <div class="botones">
-
-            <input type="button" class="conversion" value="decimal" onClick="calculadoraBases.toDecimalClick()" />
-            <input type="button" class="conversion" value="binario" onClick="calculadoraBases.toBinarioClick()" />
-            <input type="button" class="conversion" value="octal" onClick="calculadoraBases.toOctalClick()" />
-            <input type="button" class="conversion" value="hexa" onClick="calculadoraBases.toHexClick(this.value)" />
+            <input type="button" class="conversion" id="decimal" value="decimal" onClick="calculadoraBases.modeDecimal()" />
+            <input type="button" class="conversion" id="binario" value="binario" onClick="calculadoraBases.modeBinario()" />
+            <input type="button" class="conversion" id="octal" value="octal" onClick="calculadoraBases.modeOctal()" />
+            <input type="button" class="conversion" id="hex" value="hex" onClick="calculadoraBases.modeHex()" />
         </div>
 
         <div class="digitos">
-            <input type="button" class="boton" value="7" onClick="calculadoraBases.botonClick(this.value)" />
-            <input type="button" class="boton" value="8" onClick="calculadoraBases.botonClick(this.value)" />
-            <input type="button" class="boton" value="9" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" id="A" value="A" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" id="B" value="B" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" id="C" value="C" onClick="calculadoraBases.botonClick(this.value)" />
 
+            <input type="button" class="boton" id="D" value="D" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" id="E" value="E" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" id="F" value="F" onClick="calculadoraBases.botonClick(this.value)" />
 
-            <input type="button" class="boton" value="4" onClick="calculadoraBases.botonClick(this.value)" />
-            <input type="button" class="boton" value="5" onClick="calculadoraBases.botonClick(this.value)" />
-            <input type="button" class="boton" value="6" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" id="7" value="7" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" id="8" value="8" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" id="9" value="9" onClick="calculadoraBases.botonClick(this.value)" />
 
+            <input type="button" class="boton" id="4" value="4" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" id="5" value="5" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" id="6" value="6" onClick="calculadoraBases.botonClick(this.value)" />
 
-            <input type="button" class="boton" value="1" onClick="calculadoraBases.botonClick(this.value)" />
-            <input type="button" class="boton" value="2" onClick="calculadoraBases.botonClick(this.value)" />
-            <input type="button" class="boton" value="3" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" id="1" value="1" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" id="2" value="2" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" id="3" value="3" onClick="calculadoraBases.botonClick(this.value)" />
 
-
-            <input type="button" class="boton" value="0" onClick="calculadoraBases.botonClick(this.value)">
+            <input type="button" class="boton" id="0" value="0" onClick="calculadoraBases.botonClick(this.value)">
             <p></p>
             <input type="button" class="clear" value="C" onClick="calculadoraBases.botonClearClick()">
-
         </div>
 
-
+        <script src="CalculadoraBases.js"></script>
     </div>
     <p></p>
     <footer>

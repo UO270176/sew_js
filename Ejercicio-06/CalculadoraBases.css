@@ -23,7 +23,7 @@ body {
 }
 
 .digitos {
-    padding: 2% 5% 10% 5%;
+    padding: 2% 5% 15% 5%;
     background-color: beige;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
