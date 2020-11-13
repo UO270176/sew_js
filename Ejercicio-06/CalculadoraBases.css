@@ -1,0 +1,59 @@
+body {
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+}
+
+.calculadora {
+    padding: inherit;
+    width: 30%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    border: outset #067db4;
+}
+
+.pantalla {
+    font-size: 2rem;
+    height: auto;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    border: outset black;
+}
+
+.digitos {
+    padding: 2% 5% 10% 5%;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 3%;
+    grid-column-gap: 5%;
+    
+}
+
+.botones {
+    padding: 2% 5% 2% 5%;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 3%;
+    grid-column-gap: 5%;
+}
+
+.boton {
+    padding: 10% 0%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.conversion {
+    padding: 10% 0%;
+    background-color: rgb(5, 114, 14);
+    color: white;
+}
+.clear{
+    padding: 10% 0%;
+    background-color: rgb(114, 5, 5);
+    color: white;
+}

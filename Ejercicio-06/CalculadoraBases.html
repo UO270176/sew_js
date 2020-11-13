@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CalculadoraBases.css" />
+    <title>Calculadora Bases</title>
+    <meta name="viewport" content="width=device-width">
+
+</head>
+
+<body>
+    <div class="calculadora">
+        <script src="CalculadoraBases.js"></script>
+        <input type="text" class="pantalla" id="resultado" disabled />
+
+        <div class="botones">
+
+            <input type="button" class="conversion" value="decimal" onClick="calculadoraBases.toDecimalClick()" />
+            <input type="button" class="conversion" value="binario" onClick="calculadoraBases.toBinarioClick()" />
+            <input type="button" class="conversion" value="octal" onClick="calculadoraBases.toOctalClick()" />
+            <input type="button" class="conversion" value="hexa" onClick="calculadoraBases.toHexClick(this.value)" />
+        </div>
+
+        <div class="digitos">
+            <input type="button" class="boton" value="7" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" value="8" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" value="9" onClick="calculadoraBases.botonClick(this.value)" />
+
+
+            <input type="button" class="boton" value="4" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" value="5" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" value="6" onClick="calculadoraBases.botonClick(this.value)" />
+
+
+            <input type="button" class="boton" value="1" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" value="2" onClick="calculadoraBases.botonClick(this.value)" />
+            <input type="button" class="boton" value="3" onClick="calculadoraBases.botonClick(this.value)" />
+
+
+            <input type="button" class="boton" value="0" onClick="calculadoraBases.botonClick(this.value)">
+            <p></p>
+            <input type="button" class="clear" value="C" onClick="calculadoraBases.botonClearClick()">
+
+        </div>
+
+
+    </div>
+    <p></p>
+    <footer>
+        <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png"
+                alt="¡HTML5 válido!" height="31" width="88" /></a>
+    </footer>
+</body>
+
+</html>
