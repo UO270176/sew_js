@@ -1,0 +1,64 @@
+body {
+    font: 400 100% Tahoma, sans-serif;
+    /*Familia sans-serif*/
+    background-color: white;
+    color: black;
+    padding: 0%;
+    margin: 0%;
+}
+
+h1 {
+    font: 50px Impact, fantasy;
+    background-color: #f76e1ec9;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5%;
+    text-align: center;
+}
+
+h2 {
+    font: 160% Courier, monospace;
+    background-color: #058305c9;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1%;
+    border: 10px solid #000000;
+}
+
+h3 {
+    font: 140% Courier, monospace;
+    background-color: #084aa0;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1%;
+    border: 5px solid #052f66;
+}
+
+h4 {
+    font: 120% Courier, monospace;
+    background-color: #790560;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    border: 5px solid #d0ff00;
+}
+
+p {
+    text-align: justify;
+    margin: 0% 15%;
+}
+
+table {
+    text-align: left;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+}

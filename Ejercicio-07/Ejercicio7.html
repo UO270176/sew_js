@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+    <title>Ejercicio 7</title>
+</head>
+
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio7.js"></script>
+
+    <h1>Blade Runner</h1>
+
+    <main>
+        <input type="button" id="ocultarTitulo" Value="Ocultar Titulo" onclick="htmlEditor.ocultar('h1')" />
+        <input type="button" id="mostrarTitulo" Value="Mostrar Titulo" onclick="htmlEditor.mostrar('h1')" />
+        <input type="text" id="textTitulo" />
+
+        <input type="button" id="editarTitulo" Value="Editar Titulo"
+            onclick="htmlEditor.modificar('h1','textTitulo')" />
+
+        <h2>Resumen</h2>
+        <div id="pResumen">
+            <p>
+                Blade Runner es una película neo-noir y de ciencia ficción estadounidense dirigida por Ridley Scott,
+                estrenada en 1982. Fue escrita por Hampton Fancher y David Webb Peoples, y el reparto se compone de
+                Harrison
+                Ford, Rutger Hauer, Sean Young, Edward James
+                Olmos, M. Emmet Walsh, Daryl Hannah, William Sanderson, Brion James, Joe Turkel y Joanna Cassidy.
+                Está
+                basada parcialmente en la novela de Philip K. Dick ¿Sueñan los androides con ovejas eléctricas?
+                (1968).
+                Es
+                la primera película de la franquicia
+                Blade Runner.
+            </p>
+        </div>
+
+        <input type="button" id="ocultarResumen" Value="Ocultar Resumen" onclick="htmlEditor.ocultar('p')" />
+        <input type="button" id="mostrarResumen" Value="Mostrar Resumen" onclick="htmlEditor.mostrar('p')" />
+
+        <input type="text" id="textResumen" />
+        <input type="button" id="añadirResumen" Value="Añadir lineas" onclick="htmlEditor.addParrafo('pResumen','textResumen')" />
+        <input type="button" id="eliminarResumen" Value="Eliminar lineas" onclick="htmlEditor.delete('p')" />
+
+        <h3>Juegos y cómics</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Año</th>
+                    <th>Título</th>
+                    <th>Género</th>
+                    <th>Desarrollador(es)</th>
+                    <th>Plataforma(s)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1985</td>
+                    <td> Blade Runner</td>
+                    <td> Shoot 'em up</td>
+                    <td> Andy Stodart, Ian Foster e Ian Ellery</td>
+                    <td> Commodore 64, ZX Spectrum y Amstrad CPC198​</td>
+                </tr>
+                <tr>
+                    <td> 1997</td>
+                    <td> Blade Runner</td>
+                    <td> Aventura gráfica</td>
+                    <td> Westwood Studios</td>
+                    <td> Windows199​</td>
+                </tr>
+                <tr>
+                    <td> 2017</td>
+                    <td> Blade Runner 9732 (no oficial)</td>
+                    <td> Realidad virtual</td>
+                    <td> Quentin Lengele</td>
+                    <td> HTC Vive​</td>
+                </tr>
+                <tr>
+                    <td> 2018</td>
+                    <td> Blade Runner: Revelations</td>
+                    <td> Realidad virtual</td>
+                    <td> Seismic Games y Alcon Media Group</td>
+                    <td> Google Daydream</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <input type="button" id="ocultarTabla" Value="Ocultar Tabla" onclick="htmlEditor.ocultar('table')" />
+        <input type="button" id="mostrarTabla" Value="Mostrar Tabla" onclick="htmlEditor.mostrar('table')" />
+        <input type="button" id="sumarFilas" Value="Sumar filas" onclick="htmlEditor.sumarFilas('table')" />
+        <input type="button" id="sumarColumnas" Value="Sumar columnas" onclick="htmlEditor.sumarColumnas('table')" />
+    </main>
+
+    <footer>
+        <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png"
+                alt="¡HTML5  válido!" height="31" width="88" /></a>
+    </footer>
+
+    <input type="button" id="recorridoHtml" Value="Mostrar Recorrido HTML" onclick="htmlEditor.recorrido()" />
+
+
+</body>
+
+</html>
