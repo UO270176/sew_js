@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="Ejercicio10.css" />
+    <title>Traduccion de texto API</title>
+    <meta name="viewport" content="width=device-width">
+
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio10.js"></script>
+
+    <h1> Se está utilizando la API de GoogleTranslate</h1>
+
+    <div class="pantalla">
+
+        <label>Seleccione el idioma al que se desea traducir:</label>
+
+        <select id="target" name="target">
+            <option value="en">Inglés</option>
+            <option value="de">Alemán</option>
+            <option value="es">Español</option>
+            <option value="eo">Esperanto</option>
+            <option value="et">Estonian</option>
+            <option value="fr">Francés</option>
+            <option value="el">Griego</option>
+            <option value="it">Italiano</option>
+        </select>
+
+        <textarea id="textoIntroducido" placeholder="Introduzca el texto a traducir."></textarea>
+        <button id="traduce" onclick="traductor.traduce('textoIntroducido','target')">Traducir</button>
+        <textarea type="text" id="resultado" disabled></textarea>
+
+    </div>
+
+    <footer>
+        <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png"
+                alt="¡HTML5 válido!" /></a>
+    </footer>
+
+</body>
+
+</html>
