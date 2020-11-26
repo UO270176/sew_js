@@ -41,17 +41,18 @@ class Meteorologia {
                 stringDatos += "<li>Temperatura: " + datos.main.temp + " grados Celsius</li>";
                 stringDatos += "<li>Temperatura máxima: " + datos.main.temp_max + " grados Celsius</li>";
                 stringDatos += "<li>Temperatura mínima: " + datos.main.temp_min + " grados Celsius</li>";
+                stringDatos += "<li>Sensación térmica: " + datos.main.feels_like + " grados Celsius</li>";
                 stringDatos += "<li>Presión: " + datos.main.pressure + " milibares</li>";
                 stringDatos += "<li>Humedad: " + datos.main.humidity + " %</li>";
                 stringDatos += "<li>Amanece a las: " + new Date(datos.sys.sunrise * 1000).toLocaleTimeString() + "</li>";
                 stringDatos += "<li>Oscurece a las: " + new Date(datos.sys.sunset * 1000).toLocaleTimeString() + "</li>";
                 stringDatos += "<li>Dirección del viento: " + datos.wind.deg + " grados</li>";
                 stringDatos += "<li>Velocidad del viento: " + datos.wind.speed + " metros/segundo</li>";
-                stringDatos += "<li>Hora de la medida: " + new Date(datos.dt * 1000).toLocaleTimeString() + "</li>";
-                stringDatos += "<li>Fecha de la medida: " + new Date(datos.dt * 1000).toLocaleDateString() + "</li>";
                 stringDatos += "<li>Descripción: " + datos.weather[0].description + "</li>";
                 stringDatos += "<li>Visibilidad: " + datos.visibility + " metros</li>";
-                stringDatos += "<li>Nubosidad: " + datos.clouds.all + " %</li></ul>";
+                stringDatos += "<li>Nubosidad: " + datos.clouds.all + " %</li>";
+                stringDatos += "<li>Hora de la medida: " + new Date(datos.dt * 1000).toLocaleTimeString() + "</li>";
+                stringDatos += "<li>Fecha de la medida: " + new Date(datos.dt * 1000).toLocaleDateString() + "</li></ul>";
 
                 $("p").html(stringDatos);
             },
