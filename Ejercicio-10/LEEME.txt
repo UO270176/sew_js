@@ -1,0 +1,8 @@
+Adjunto este leeme, porque la API en su version BASIC deja traducir 500 caracteres por mes... Casi cumplo el cupo solo testeando,espero que no llegue a dar ningun problema.
+Disculpad las molestias.
+
+Tambien aprovecho para explicar la funcionalidad (por si no quedase clara)-
+La App consiste en un traductor de texto, introduces el texto que deseas traducir y seleccionas el idioma al que lo quieres traducir del "combobox".
+Autodetecta el idioma de origen,por lo que puedes probar a traducir del frances al español o al reves o cualquier combinacion que se ocurra.
+
+
