@@ -15,24 +15,20 @@ class LectorGeoJSON {
         } else {
             var lector = new FileReader();
             lector.onload = function (evento) {
-                var parser = new DOMParser();
-                var doc = parser.parseFromString(lector.result, "application/xml");
+                var doc = JSON.parse(lector.result);
 
-                for (var c of doc.childNodes[0].childNodes[0].children) {
+                for (var c of doc.features) {
 
-                    var nombre = c.children[0].textContent;
+                    var nombre = c.properties.name;
 
-                    var coordHitos = c.children[1].children[2].textContent;
-                    var arraycord = coordHitos.split("\n");
+                    var coordHitos =  c.geometry.coordinates;
 
                     var polyline = [];
 
+                    for (var i = 0; i < coordHitos.length ; i++) {
 
-                    for (var i = 1; i < arraycord.length - 1; i++) {
-
-                        var coordenadas = arraycord[i].split(",");
-                        var longitud = parseFloat(coordenadas[0]);
-                        var latitud = parseFloat(coordenadas[1]);
+                        var longitud = parseFloat(coordHitos[i][0]);
+                        var latitud = parseFloat(coordHitos[i][1]);
                         var posicion = { lat: latitud, lng: longitud };
 
                         polyline.push(posicion);
@@ -65,7 +61,6 @@ class LectorGeoJSON {
 
                 }
             }
-
 
             lector.readAsText(archivo);
         }
