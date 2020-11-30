@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rutas SYSTEM "rutas.dtd">
+
+<rutas>
+
+    <ruta nombre="Ruta Playa Gijon" tipo="Paisajística" dificultad="Media" duracion="2 horas">
+        <datosRuta>
+            <agencia>DronMe</agencia>
+            <descripcion>Ruta por la playa del Poniente de Gijon, perfecta para capturar tomas aereas de la ciudad y el mar. </descripcion>
+            <adecuacion>Se puede ir con niños</adecuacion>
+            <lugarInicio>Playa San Lorenzo</lugarInicio>
+            <direccionInicio>La escalerona</direccionInicio>
+            <coordenadas longitud="-5.659169" latitud="43.542379" altitud="0"/>
+        </datosRuta>
+
+        <referencias>
+            <referencia>https://es.wikipedia.org/wiki/Gij%C3%B3n</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Playa_de_San_Lorenzo</referencia>
+            <referencia>https://youtu.be/_w5srC3EdVI</referencia>
+        </referencias>
+
+        <recomendacion>8.0</recomendacion>
+
+        <hitos>
+            <hito nombre="Escalerona" descripcionHito="La playa de San Lorenzo está situada en pleno centro de Gijón. Con una longitud de 1550 metros y forma de concha, es una de las playas más emblemáticas del Principado de Asturias. Se prolonga desde la escalera 0 (La Cantábrica)">
+                <distancia medida="metros">0</distancia>
+				<coordenadas longitud="-5.659169" latitud="43.542379" altitud="3" />
+                <fotografias>
+                    <fotografia>https://img.europapress.es/fotoweb/fotonoticia_20200704133619_420.jpg</fotografia>
+                    <fotografia>https://static3.elcomercio.es/www/multimedia/201908/20/media/playa-san-lorenzo.jpg</fotografia>
+                </fotografias>
+            </hito>
+            <hito nombre="Iglesia de San Pablo" descripcionHito="La iglesia de San Pedro es un templo católico ubicado en la ciudad de Gijón (Principado de Asturias, España), de la que es uno de sus edificios más representativos.1​ Se sitúa en el Campo Valdés, en un extremo de la playa de San Lorenzo y a los pies del barrio de Cimadevilla. Fue el único templo parroquial de la localidad hasta el año 1893.1">
+                <distancia medida="metros">400</distancia>
+				<coordenadas longitud="-5.660915" latitud="43.545771" altitud="5" />
+                <fotografias>
+                    <fotografia>https://d3ipks40p8ekbx.cloudfront.net/dam/jcr:60ccbe25-f574-46a4-a87c-f88786a36525/490x373-playa-san-lorenzo-gijon.jpg</fotografia>
+                    <fotografia>https://www.bodasturias.com/wp-content/uploads/2017/01/iglesia-san-pedro-gijon.jpg</fotografia>
+                    <fotografia>https://misas.net/wp-content/uploads/parroquia-mayor-de-san-pedro-apostol-1024x564.jpg</fotografia>
+                </fotografias>
+            </hito>
+            <hito nombre="Elogio al horizonte" descripcionHito="Elogio del horizonte es el nombre de una escultura de hormigón situada en la ciudad de Gijón (Principado de Asturias, España), realizada por el escultor vasco Eduardo Chillida.1​ Se trata de una obra de grandes proporciones erigida en el año 1990 en el Cerro de Santa Catalina.">
+                <distancia medida="metros">410</distancia>
+				<coordenadas longitud="-5.662795" latitud="43.548962" altitud="15" />
+                <fotografias>
+                    <fotografia>https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Elogio_chillida_gijon.jpg/220px-Elogio_chillida_gijon.jpg</fotografia>
+                    <fotografia>https://mas.lne.es/25-aniversario-lne-gijon/wp-content/uploads/2019/01/elogio-del-horizonte-1500x1000.jpg</fotografia>
+                </fotografias>
+            </hito>
+        </hitos>
+
+    </ruta>
+
+</rutas>

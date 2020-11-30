@@ -1,0 +1,17 @@
+{
+    "nombrePelicula": "Los Vengadores",
+    "fechaLanzamiento": 2016,
+    "recaudacion": "1000 Millones",
+    "actores": [
+        {
+            "nombre": "Robert Downey Jr.",
+            "edad": 55,
+            "personaje": "Tony Stark"
+        },
+        {
+            "name": "Chris Evans",
+            "age": 39,
+            "secretIdentity": "Capitan America"
+        }
+    ]
+}
