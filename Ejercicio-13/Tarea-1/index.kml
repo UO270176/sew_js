@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<Placemark> <name>Ruta Playa Gijon</name> <LineString><extrude>1</extrude><tessellate>1</tessellate><coordinates>
+-5.659169,43.542379,0
+-5.659169,43.542379,3
+-5.660915,43.545771,5
+-5.662795,43.548962,15
+</coordinates><altitudeMode>relativeToGround</altitudeMode></LineString><Style> id='lineaRoja'><LineStyle><color>#ff0000ff</color><width>5</width></LineStyle></Style></Placemark>
+<Placemark> <name>Ruta Oviedo Antiguo y Centro</name> <LineString><extrude>1</extrude><tessellate>1</tessellate><coordinates>
+-5.844277,43.362361,229
+-5.844277,43.362361,239
+-5.848044,43.362196,235
+-5.85135143,43.361137,245
+</coordinates><altitudeMode>relativeToGround</altitudeMode></LineString><Style> id='lineaRoja'><LineStyle><color>#ff0000ff</color><width>5</width></LineStyle></Style></Placemark>
+<Placemark> <name>Ruta Monte Naranco</name> <LineString><extrude>1</extrude><tessellate>1</tessellate><coordinates>
+-5.865872,43.379133,370
+-5.865872,43.379133,375
+-5.868453,43.380259,390
+-5.863796,43.384581,635
+</coordinates><altitudeMode>relativeToGround</altitudeMode></LineString><Style> id='lineaRoja'><LineStyle><color>#ff0000ff</color><width>5</width></LineStyle></Style></Placemark>
+</Document></kml>

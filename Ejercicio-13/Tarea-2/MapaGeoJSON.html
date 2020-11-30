@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Leer un archivo GeoJSON</title>
+    <link rel="stylesheet" type="text/css" href="MapaGeoJSON.css" />
+    <script src="MapaGeoJSON.js"></script>
+</head>
+
+<body>
+
+    <h1>Leer un archivo GeoJSON y mostrarlo en un mapa</h1>
+
+    <p>Seleccione un archivo GeoJSON: </p>
+
+    <input type="file" id="archivoTexto" onchange="lectorGeoJSON.leerArchivoTexto(this.files)">
+
+    <div id="map"></div>
+    <div id="capture"></div>
+
+    <pre id="areaTexto"></pre>
+    <p id="errorLectura"></p>
+
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap"></script>
+    <footer>
+        <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png"
+                alt="¡HTML5 válido!" height="31" width="88" /></a>
+    </footer>
+</body>
+
+</html>

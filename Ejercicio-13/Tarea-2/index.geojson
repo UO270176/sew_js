@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "index",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Ruta Playa Gijon", "description": null, "altitudeMode": "relativeToGround", "tessellate": 1, "extrude": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ -5.659169, 43.542379 ], [ -5.659169, 43.542379 ], [ -5.660915, 43.545771 ], [ -5.662795, 43.548962 ] ] } },
+{ "type": "Feature", "properties": { "Name": "Ruta Oviedo Antiguo y Centro", "description": null, "altitudeMode": "relativeToGround", "tessellate": 1, "extrude": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ -5.844277, 43.362361 ], [ -5.844277, 43.362361 ], [ -5.848044, 43.362196 ], [ -5.85135143, 43.361137 ] ] } },
+{ "type": "Feature", "properties": { "Name": "Ruta Monte Naranco", "description": null, "altitudeMode": "relativeToGround", "tessellate": 1, "extrude": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ -5.865872, 43.379133 ], [ -5.865872, 43.379133 ], [ -5.868453, 43.380259 ], [ -5.863796, 43.384581 ] ] } }
+]
+}
