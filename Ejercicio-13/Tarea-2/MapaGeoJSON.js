@@ -22,11 +22,11 @@ class LectorGeoJSON {
 
                     var nombre = c.properties.name;
 
-                    var coordHitos =  c.geometry.coordinates;
+                    var coordHitos = c.geometry.coordinates;
 
                     var polyline = [];
 
-                    for (var i = 0; i < coordHitos.length ; i++) {
+                    for (var i = 0; i < coordHitos.length; i++) {
 
                         var longitud = parseFloat(coordHitos[i][0]);
                         var latitud = parseFloat(coordHitos[i][1]);
@@ -75,9 +75,9 @@ class LectorGeoJSON {
         }
         else document.write("<p>¡¡¡ Este navegador NO soporta el API File y este programa puede no funcionar correctamente !!!</p>");
     }
-     initMap() {
+    initMap() {
         //Asturias
-        var center = { lat: 43.473013, lng: -5.822196};
+        var center = { lat: 43.473013, lng: -5.822196 };
         lectorGeoJSON.map = new google.maps.Map(document.getElementById("map"), {
             center: center,
             zoom: 10
