@@ -1,7 +1,11 @@
+/*001*/
+
 body {
     background-color: white;
     color: black;
 }
+
+/*001*/
 
 h1 {
     background-color: white;
@@ -10,12 +14,16 @@ h1 {
     border: outset yellowgreen;
 }
 
+/*001*/
+
 h2 {
     background-color: white;
     text-align: center;
     color: #026412;
     border: outset #B30000;
 }
+
+/*001*/
 
 h3 {
     background-color: white;
@@ -24,11 +32,15 @@ h3 {
     border: outset yellow;
 }
 
+/*001*/
+
 h4 {
     background-color: white;
     text-align: center;
     color: black;
 }
+
+/*001*/
 
 p {
     background-color: white;

@@ -1,8 +1,12 @@
+/*001*/
+
 body {
     background-color: white;
     color: black;
     box-sizing: border-box;
 }
+
+/*010*/
 
 .calculadora {
     padding: inherit;
@@ -13,6 +17,8 @@ body {
     border: outset #067db4;
 }
 
+/*010*/
+
 .pantalla {
     font-size: 2rem;
     height: auto;
@@ -22,18 +28,23 @@ body {
     border: outset black;
 }
 
+/*010*/
+
 .digitos {
     padding: 2% 5% 15% 5%;
+    color: black;
     background-color: beige;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 3%;
     grid-column-gap: 5%;
-    
 }
+
+/*010*/
 
 .botones {
     padding: 2% 5% 2% 5%;
+    color: black;
     background-color: beige;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -41,18 +52,25 @@ body {
     grid-column-gap: 5%;
 }
 
+/*010*/
+
 .boton {
     padding: 10% 0%;
     background-color: rgb(255, 255, 255);
     color: black;
 }
 
+/*010*/
+
 .conversion {
     padding: 10% 0%;
     background-color: rgb(5, 114, 14);
     color: white;
 }
-.clear{
+
+/*010*/
+
+.clear {
     padding: 10% 0%;
     background-color: rgb(114, 5, 5);
     color: white;

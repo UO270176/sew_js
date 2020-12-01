@@ -1,16 +1,22 @@
+/*001*/
+
 body {
     background-color: #ffcdb0;
     color: black;
     margin: 0%;
 }
 
+/*001*/
+
 h1 {
     margin: 0%;
     background-color: #f76e1e;
-    color: #fff;
+    color: black;
     padding: 4%;
     text-align: center;
 }
+
+/*001*/
 
 h2 {
     margin: 0%;
@@ -20,6 +26,8 @@ h2 {
     color: black
 }
 
+/*001*/
+
 h3 {
     margin: 0%;
     background-color: #faa06c;
@@ -27,6 +35,8 @@ h3 {
     text-align: center;
     color: black
 }
+
+/*001*/
 
 h4 {
     margin: 0%;
@@ -36,11 +46,15 @@ h4 {
     color: black
 }
 
+/*001*/
+
 p {
     background-color: #ffcdb0;
     margin: 1%;
-    color: gray;
+    color: #000000;
 }
+
+/*001*/
 
 footer {
     margin: 1%;

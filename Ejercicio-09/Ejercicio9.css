@@ -1,12 +1,12 @@
-body {
+/*001*/ body {
     font: 400 100% Tahoma, sans-serif;
     /*Familia sans-serif*/
     background-color: #ffffff;
     color: #000000;
 }
 
-h1 {
-    font: 160% bold Courier, monospace;
+/*001*/ h1{
+    font: 160% "bold Courier", monospace;
     background-color: #037baa;
     padding: 2%;
     color: #fff;
@@ -15,13 +15,17 @@ h1 {
     margin: 2% 0% 2% 0%;
 }
 
+/*001*/
+
 h2 {
-    font: 150% bold Courier, monospace;
+    font: 150% "bold Courier", monospace;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     text-align: left;
 }
+
+/*001*/
 
 h3 {
     font: 140% Courier, monospace;
@@ -32,6 +36,8 @@ h3 {
     margin: 1% 50% 1% 0%;
 }
 
+/*001*/
+
 h4 {
     font: 120% Courier, monospace;
     background-color: #00806b;
@@ -40,6 +46,8 @@ h4 {
     text-align: left;
     margin: 1% 60% 0% 0%;
 }
+
+/*001*/
 
 h5 {
     font: 120% Courier, monospace;
@@ -50,27 +58,27 @@ h5 {
     margin: 1% 70% 0% 0%;
 }
 
-p {
+/*001*/ p {
     margin: 1%;
     text-align: left;
 }
 
-ul {
+/*001*/ ul {
     list-style-type: none;
     padding: 0% 1% 0% 1%;
     margin: 0% 50% 0% 0%;
 }
 
-ul li {
+/*002*/ ul li {
     margin: 1% 0% 1% 0%;
 }
 
-div#icono img {
+div#icono /*001*/ img {
     margin: 0% 0%;
     width: 5%;
     height: 5%;
 }
 
-img {
+/*001*/ img {
     margin: 1% 0%;
 }

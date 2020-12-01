@@ -1,3 +1,5 @@
+/*001*/
+
 body {
     font: 400 100% Tahoma, sans-serif;
     /*Familia sans-serif*/
@@ -5,8 +7,10 @@ body {
     color: #000000;
 }
 
+/*001*/
+
 h1 {
-    font: 160% bold Courier, monospace;
+    font: 160% "bold Courier", monospace;
     background-color: #037baa;
     padding: 2%;
     color: #fff;
@@ -15,17 +19,22 @@ h1 {
     margin: 2% 0%;
 }
 
+/*100*/
+
 #mapa {
     height: 500px;
     width: 100%;
 }
+
+/*001*/
 
 p {
     margin: 1%;
     text-align: left;
 }
 
+/*001*/
+
 img {
     margin: 1% 0%;
 }
-

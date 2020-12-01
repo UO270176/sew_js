@@ -1,8 +1,12 @@
+/*001*/
+
 body {
     background-color: white;
     color: black;
     box-sizing: border-box;
 }
+
+/*010*/
 
 .calculadora {
     padding: inherit;
@@ -10,6 +14,8 @@ body {
     display: grid;
     grid-template-rows: 0.5fr 1fr;
 }
+
+/*010*/
 
 .pantalla {
     font-size: 2rem;
@@ -19,8 +25,11 @@ body {
     border: outset black;
 }
 
+/*010*/
+
 .botones {
     padding: 2% 5% 10% 5%;
+    color: black;
     background-color: beige;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -29,16 +38,22 @@ body {
     border: outset green;
 }
 
+/*010*/
+
 .boton {
-    padding:10% 0%;
+    padding: 10% 0%;
     background-color: rgb(255, 255, 255);
     color: black;
 }
+
+/*010*/
 
 .operacion {
     background-color: rgb(168, 5, 5);
     color: white;
 }
+
+/*010*/
 
 .calc {
     background-color: rgb(5, 114, 14);
