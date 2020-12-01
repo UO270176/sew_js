@@ -62,5 +62,7 @@ img {
 /*100*/
 
 #range {
+    color: black;
+    background-color: white;
     display: inline-block;
 }
