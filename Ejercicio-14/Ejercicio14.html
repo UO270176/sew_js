@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pizarra de dibujo</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio14.css" />
+
+</head>
+
+<body>
+    <h1>Dibuja algo!</h1>
+
+    <canvas id="canvas"></canvas>
+
+    <div id="paleta">
+        <button class="color" id="clean" onclick="pizarra.limpiar()">Limpiar</button>
+        <button class="color" id="black" onclick="pizarra.cambiarColor('black')">Negro</button>
+        <button class="color" id="red" onclick="pizarra.cambiarColor('red')">Rojo</button>
+        <button class="color" id="blue" onclick="pizarra.cambiarColor('blue')">Azul</button>
+        <button class="color" id="green" onclick="pizarra.cambiarColor('green')">Verde</button>
+        <button class="color" id="yellow" onclick="pizarra.cambiarColor('yellow')">Amarillo</button>
+        <button class="color" id="orange" onclick="pizarra.cambiarColor('orange')">Naranja</button>
+        <button class="color" id="purple" onclick="pizarra.cambiarColor('purple')">Morado</button>
+        <div id="range">
+            <label for="grosor">Grosor del pincel</label>
+            <input type="range" id="grosor" name="grosor" min="1" max="50" value="5" onchange="pizarra.cambiarGrosor(this.value)">
+        </div>
+      
+    </div>
+
+    <script src="Ejercicio14.js"></script>
+    <footer>
+        <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png"
+                alt="¡HTML5 válido!" height="31" width="88" /></a>
+    </footer>
+</body>
+
+</html>

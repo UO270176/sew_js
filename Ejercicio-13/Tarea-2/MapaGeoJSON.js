@@ -1,6 +1,7 @@
 class LectorGeoJSON {
     constructor() {
         this.validaNavegador();
+        this.map;
     }
 
 
@@ -74,16 +75,15 @@ class LectorGeoJSON {
         }
         else document.write("<p>¡¡¡ Este navegador NO soporta el API File y este programa puede no funcionar correctamente !!!</p>");
     }
+     initMap() {
+        //Asturias
+        var center = { lat: 43.473013, lng: -5.822196};
+        lectorGeoJSON.map = new google.maps.Map(document.getElementById("map"), {
+            center: center,
+            zoom: 10
+        });
+    }
 
-}
-
-function initMap() {
-    //Asturias
-    var center = { lat: 43.473013, lng: -5.822196};
-    lectorGeoJSON.map = new google.maps.Map(document.getElementById("map"), {
-        center: center,
-        zoom: 10
-    });
 }
 
 var lectorGeoJSON = new LectorGeoJSON();
