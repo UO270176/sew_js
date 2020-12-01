@@ -17,7 +17,7 @@
     <main>
         <input type="button" id="ocultarTitulo" Value="Ocultar Titulo" onclick="htmlEditor.ocultar('h1')" />
         <input type="button" id="mostrarTitulo" Value="Mostrar Titulo" onclick="htmlEditor.mostrar('h1')" />
-        <input type="text" id="textTitulo" />
+        <input type="text" id="textTitulo" title="titulo" />
 
         <input type="button" id="editarTitulo" Value="Editar Titulo"
             onclick="htmlEditor.modificar('h1','textTitulo')" />
@@ -42,7 +42,7 @@
         <input type="button" id="ocultarResumen" Value="Ocultar Resumen" onclick="htmlEditor.ocultar('p')" />
         <input type="button" id="mostrarResumen" Value="Mostrar Resumen" onclick="htmlEditor.mostrar('p')" />
 
-        <input type="text" id="textResumen" />
+        <input type="text" id="textResumen" title="resumen" />
         <input type="button" id="añadirResumen" Value="Añadir lineas" onclick="htmlEditor.addParrafo('pResumen','textResumen')" />
         <input type="button" id="eliminarResumen" Value="Eliminar lineas" onclick="htmlEditor.delete('p')" />
 
