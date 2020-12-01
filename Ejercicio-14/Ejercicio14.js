@@ -5,70 +5,78 @@ class Pizarra {
         window.color = 'black';
         window.grosor = 5;
 
-        // Seleccionamos el id del elemento 
         window.canvas = document.querySelector('canvas');
 
-        // Contexto del canva para operaciones 2d 
         window.ctx = canvas.getContext('2d');
-        // Colocamos el curos en su posición inicial 
+
         window.coordenadas = { x: 0, y: 0 };
 
-        // Con esta variable se inicia deshabilitado el dibujado en el Canvas 
         window.dibujar = false;
-        // Esperamos el contenido del elemento de ventana para hacer las operaciones 
+
         window.addEventListener('load', () => {
 
-            this.redimensionar(); // Redimensionamos el tamaño del canvas al cargar la Página 
+            this.redimensionar();
             document.addEventListener('mousedown', this.iniciarDibujado);
             document.addEventListener('mouseup', this.detenerDibujado);
             document.addEventListener('mousemove', this.dibujo);
             window.addEventListener('resize', this.redimensionar);
         });
+
+        // Evento pantalla completa
+        document.addEventListener("keydown", function (e) {
+            if (e.keyCode == 13) {
+                if (!document.fullscreenElement) {
+
+                    document.documentElement.requestFullscreen();
+
+                } else {
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                    }
+                }
+            }
+        }, false);
     }
 
-    // Redimensionamos el tamaño del canvas según el tamaño de la ventana 
+
+
     redimensionar() {
+        var data = window.ctx.getImageData(0, 0, window.ctx.canvas.width, window.ctx.canvas.height);
         window.ctx.canvas.width = window.innerWidth;
         window.ctx.canvas.height = window.innerHeight * 0.7;
+        window.ctx.putImageData(data, 0, 0);
     }
 
-    // Habilitamos el dibujado en el Canvas  
+
     iniciarDibujado(event) {
         window.dibujar = true;
         window.coordenadas.x = event.clientX - window.canvas.offsetLeft;
         window.coordenadas.y = event.clientY - window.canvas.offsetTop;
     }
 
-    // Detenemos el dibujado 
+
     detenerDibujado() {
         window.dibujar = false;
     }
 
     dibujo(event) {
-
         if (!window.dibujar) return;
 
         window.ctx.beginPath();
 
         window.ctx.lineWidth = window.grosor;
 
-        // Trazo redondeado 
         window.ctx.lineCap = 'round';
 
-        // Color del trazo del dibujo en el Canvas 
         window.ctx.strokeStyle = window.color;
 
-        // El cursor para comenzar a dibujar se mueve a esta coordenada 
         window.ctx.moveTo(window.coordenadas.x, window.coordenadas.y);
 
-        // La posición del cursor se actualiza a medida que movemos el mouse alrededor del Canvas 
         window.coordenadas.x = event.clientX - window.canvas.offsetLeft;
         window.coordenadas.y = event.clientY - window.canvas.offsetTop;
 
-        // Se traza una línea desde el inicio 
         window.ctx.lineTo(window.coordenadas.x, window.coordenadas.y);
 
-        // Dibujamos las líneas  
         window.ctx.stroke();
     }
 
@@ -82,6 +90,58 @@ class Pizarra {
         window.ctx.clearRect(0, 0, window.innerWidth, window.innerHeight * 0.7);
         document.getElementById('grosor').value = 5;
         new Pizarra();
+    }
+
+    pantallaCompleta() {
+        var elem = document.getElementById("myvideo");
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        }
+    }
+    guardar() {
+        var a = document.createElement("a");
+        document.body.appendChild(a);
+
+        var imageURI = window.canvas.toDataURL("image/jpg");
+        a.href = imageURI;
+        var fecha = new Date(Date.now());
+        a.download = "pizarra_" + fecha.getDate() + "_" + fecha.getMonth() + "_" + fecha.getFullYear() + ".jpg";
+        a.click();
+
+        window.URL.revokeObjectURL(a);
+        document.body.removeChild(a);
+    }
+
+    dropHandler(ev) {
+        ev.preventDefault();
+        if (ev.dataTransfer.items) {
+
+            for (var i = 0; i < ev.dataTransfer.items.length; i++) {
+                if (ev.dataTransfer.items[i].kind === 'file') {
+                    var file = ev.dataTransfer.items[i].getAsFile();
+                }
+            }
+
+            var img = new Image();
+            img.src = file.name;
+            img.onload = function () {
+                window.ctx.drawImage(img, 0, 0);
+            }
+
+            this.removeDragData(ev);
+        }
+    }
+
+    dragOverHandler(ev) {
+        ev.preventDefault();
+    }
+
+    removeDragData(ev) {
+        if (ev.dataTransfer.items) {
+            ev.dataTransfer.items.clear();
+        } else {
+            ev.dataTransfer.clearData();
+        }
     }
 }
 var pizarra = new Pizarra();

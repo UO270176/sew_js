@@ -11,7 +11,11 @@
 <body>
     <h1>Dibuja algo!</h1>
 
-    <canvas id="canvas"></canvas>
+    <div id="drop_zone" ondrop="pizarra.dropHandler(event);" ondragover="pizarra.dragOverHandler(event);">
+        <p>Arrastra y suelta una imagen si quieres dibujar sobre ella! (Las imagenes deben de estar en la carpeta raiz)</p>
+        <p>Pulsa "intro" para entrar en pantalla completa</p>
+        <canvas id="canvas"></canvas>
+    </div>
 
     <div id="paleta">
         <button class="color" id="clean" onclick="pizarra.limpiar()">Limpiar</button>
@@ -24,9 +28,11 @@
         <button class="color" id="purple" onclick="pizarra.cambiarColor('purple')">Morado</button>
         <div id="range">
             <label for="grosor">Grosor del pincel</label>
-            <input type="range" id="grosor" name="grosor" min="1" max="50" value="5" onchange="pizarra.cambiarGrosor(this.value)">
+            <input type="range" id="grosor" name="grosor" min="1" max="50" value="5"
+                onchange="pizarra.cambiarGrosor(this.value)">
         </div>
-      
+        <button class="color" id="save" onclick="pizarra.guardar()">Guardar imagen</button>
+
     </div>
 
     <script src="Ejercicio14.js"></script>
