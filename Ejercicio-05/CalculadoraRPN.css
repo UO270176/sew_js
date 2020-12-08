@@ -56,7 +56,7 @@ body {
 .botones {
     margin-top: 0%;
     padding: 2% 5% 4% 5%;
-    color: black;
+    color: rgb(255, 255, 255);
     background-color: #999995;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
