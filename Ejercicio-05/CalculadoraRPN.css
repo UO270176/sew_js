@@ -13,18 +13,34 @@ body {
     width: 30%;
     height: auto;
     display: grid;
-    grid-template-rows: 0.5fr 1fr;
+    grid-template-rows: 0.5fr;
 }
 
 /*010*/
 
 .pantalla {
     font-size: 2rem;
-    height: auto;
+    height: 3rem;
     background-color: #252525;
     color: #fff;
     text-align: right;
     border: outset black;
+    margin-bottom: 0%;
+}
+
+.pantallaPila {
+    height: auto;
+    display: grid;
+    font-size: 2rem;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    border: outset black;
+}
+
+.pantallaPila p {
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 /*011*/
@@ -38,19 +54,33 @@ body {
 /*010*/
 
 .botones {
-    padding: 2% 5% 13% 5%;
+    margin-top: 0%;
+    padding: 2% 5% 4% 5%;
     color: black;
-    background-color: beige;
+    background-color: #999995;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 3%;
     grid-column-gap: 5%;
-    border: outset green;
+    border: outset black;
+}
+
+.basico {
+    margin-top: 0%;
+    padding: 7% 5% 20% 5%;
+    color: black;
+    background-color: #999995;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 3%;
+    grid-column-gap: 5%;
+    border: outset black;
 }
 
 /*010*/
 
 .boton {
+    font-size: 1rem;
     padding: 10% 0%;
     background-color: rgb(255, 255, 255);
     color: black;
@@ -59,13 +89,22 @@ body {
 /*010*/
 
 .operacion {
-    background-color: rgb(168, 5, 5);
+    font-size: 2rem;
+    background-color: rgb(175, 43, 43);
     color: white;
 }
 
 /*010*/
 
 .calc {
-    background-color: rgb(5, 114, 14);
+    background-color: rgb(56, 170, 65);
     color: white;
+}
+
+p {
+    text-align: justify;
+}
+
+.help img {
+    width: 30%;
 }

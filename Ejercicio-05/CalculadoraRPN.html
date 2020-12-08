@@ -10,10 +10,15 @@
 </head>
 
 <body>
-    <div class="calculadora">
-        <script src="CalculadoraRPN.js"></script>
 
-        <div class="pantalla" id="pila"></div>
+    <script src="CalculadoraRPN.js"></script>
+
+    <div class="calculadora">
+        <div class="pantallaPila" id="pila">
+            <p>Pila de operaciones</p>
+        </div>
+
+
         <input type="text" class="pantalla" id="linea" title="pantalla" disabled />
 
         <div class="botones">
@@ -32,7 +37,9 @@
             <input type="button" class="boton" value="cos" onClick="calculadoraRPN.botonCosClick()" />
             <input type="button" class="boton" value="tan" onClick="calculadoraRPN.botonTanClick()" />
             <input type="button" class="boton" value="+-" onClick="calculadoraRPN.botonSignClick()" />
-
+        </div>
+        
+        <div class="basico">
             <input type="button" class="boton" value="7" onClick="calculadoraRPN.botonClick(this.value)" />
             <input type="button" class="boton" value="8" onClick="calculadoraRPN.botonClick(this.value)" />
             <input type="button" class="boton" value="9" onClick="calculadoraRPN.botonClick(this.value)" />
@@ -54,10 +61,36 @@
             <input type="button" class="operacion" value="+" onClick="calculadoraRPN.botonSumClick()" />
 
             <input type="button" class="boton" value="C" onClick="calculadoraRPN.botonClearClick()">
-
+            <input type="button" class="boton" value="DEL" onClick="calculadoraRPN.botonClearClick()">
         </div>
+
     </div>
-    <p></p>
+    <div class="help">
+        <h2>¿Qué es la Notación Polaca Inversa?</h2>
+        <p>
+            La notación polaca inversa, notación de postfijo, o notación posfija (en inglés, Reverse Polish Notation, o
+            RPN),
+            es un método algebraico alternativo de introducción de datos. Su nombre viene por analogía con la
+            relacionada notación polaca,
+            una notación de prefijo introducida en 1920 por el matemático polaco Jan Łukasiewicz(alias Robert) en donde
+            cada operador está
+            antes de sus operandos.</p>
+        <p>
+            En la notación polaca inversa es al revés: primero están los operandos y después viene el operador que
+            va a realizar los cálculos sobre ellos. Tanto la notación polaca como la notación polaca inversa no
+            necesitan usar paréntesis
+            para indicar el orden de las operaciones, mientras la aridad del operador sea fija.
+        </p>
+
+        <h3>Instrucciones de uso</h3>
+        <p>Primero deberas introducir los operandos deseados, para ello pulsa en los numeros que quieras añadir a la
+            pila y pulsa en "ENTER" para añadirlo a la pila.</p>
+        <img src="Captura1.PNG">
+        <p>Una vez introducidos los numeros pulsa la operacion deseada, en el caso de la suma se sumarian los dos
+            ultimos elementos introducidos y se colocaria el resultado a continuacion.</p>
+        <img src="Captura2.PNG">
+    </div>
+
     <footer>
         <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png"
                 alt="¡HTML5 válido!" height="31" width="88" /></a>

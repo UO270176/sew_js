@@ -8,7 +8,8 @@ class CalculadoraRPN {
 
     mostrar() {
         if (this.pila.length != 0) {
-            var stringPila = "<ol>";
+            var stringPila = "";
+			stringPila+="<p>Pila de operaciones</p><ol>";
             for (var i in this.pila) {
                 stringPila += "<li>" + this.pila[i] + "</li>";
             }
@@ -21,7 +22,7 @@ class CalculadoraRPN {
     botonClearClick() {
         this.pila = new Array();
         document.getElementById('linea').value = '';
-        document.getElementById('pila').innerHTML = '';
+        document.getElementById('pila').innerHTML = '<p>Pila de operaciones</p>';
         this.first = 1;
         this.mr = false;
     }
@@ -77,7 +78,7 @@ class CalculadoraRPN {
         var y;
         x = this.pila.pop();
         y = this.pila.pop();
-        this.pila.push(parseFloat(x) / parseFloat(y));
+        this.pila.push(parseFloat(y) / parseFloat(x));
 
         document.getElementById('pila').innerHTML = this.mostrar();
         document.getElementById('linea').value = '';
